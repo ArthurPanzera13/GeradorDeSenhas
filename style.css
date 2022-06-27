@@ -1,0 +1,117 @@
+*{
+    font-family: sans-serif ;
+    width: 100%;
+    margin: 0auto;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo{
+    max-width: 600px;
+    margin-bottom: 24px;
+}
+
+.container-input{
+    max-width: 480px;
+    margin: 14px 0;
+    
+}
+
+.container-input span{
+    color: wheat;
+    font-size: 22px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width: 100%;
+    border-radius: 5px ;
+    height: 18px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.button-cta{
+    height: 40px;
+    background-color: wheat;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 30px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: transform 0.3s;
+    
+}
+
+.container-password{
+    max-width: 480px;
+    margin: 14px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: wheat;
+    cursor: pointer;
+}
+
+.titulo{
+    text-align: center;
+    font-size: 28px;
+    margin-top: 24px;
+    margin-bottom: 8px;
+}
+
+.senha{
+    height: 60px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid wheat;
+    transition: transform 0.3s;
+}
+
+.senha:hover{
+    transform: scale(1.01);
+}
+
+.button-cta:hover{
+    transform: scale(1.01);
+}
+
+.ola{
+    color: wheat;
+    position: relative;
+    top: 15px;
+    padding: 6px 8px;
+    color: black;
+    background-color: white;
+    visibility: hidden;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.container-password:hover .ola{
+    visibility: visible;
+    bottom: 50px;
+    opacity: 1;
+}
+
+.hide{
+    display: none;
+}
